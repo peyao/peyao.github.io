@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>phondex - iPhone 6 Review</title>
+    <meta name="Author" content="Peter Yao, Jen Nguyen, David Canas" />
+    <!-- meta viewport ensures proper mobile rendering" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <!-- Subpages need to change directories, different from index.html -->
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-slider-pips/jquery-ui-slider-pips.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+</head>
+
+<body>
+
+<!--
+    NAVBAR
+-->
+    <div id="nav">
+        <!-- Logo -->
+        <div class="row collapse text-center">
+
+            <div class="small-2 large-2 large-offset-0 columns" id="logo">
+                <a href="../index.html"><img src="../img/Phonedex%20Logo.png" alt="Phonedex Logo"></a>
+            </div>
+            <div class="small-2 small-offset-1 large-1 large-offset-5 columns" id="search-nav-tab"><a href="#" class="a-fill-div">search &nbsp;&nbsp;<i class="fa fa-search"></i></a></div>
+            <div class="small-2 large-1 columns" id="login-nav-tab"><a href="#" class="a-fill-div">login &nbsp;&nbsp;<i class="fa fa-user"></i></a></div>
+            <div class="small-2 large-1 columns" id="tip-us-nav-tab"><a href="#" class="a-fill-div">tip us &nbsp;&nbsp;<i class="fa fa-exclamation"></i></a></div>
+            <div class="small-2 large-1 columns end" id="help-nav-tab"><a href="#" class="a-fill-div">need help &nbsp;&nbsp;<i class="fa fa-question"></i></a></div>
+        </div>
+        <!-- End Logo -->
+
+        <div class="row">
+            <!-- Dropdowns -->
+            <div class="row collapse">
+                <div class="small-12 large-12 small-centered columns text-center" id="nav-links">
+                    <div class="row collapse">
+                        <div class="small-3 columns" id="nav-link-1">
+                            <a class="a-fill-div darken" href="#" data-dropdown="news-drop" data-options="align:bottom" aria-controls="news-drop" aria-expanded="false">*News <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-2">
+                            <a class="a-fill-div darken" href="#" data-dropdown="reviews-drop" data-options="align:bottom" aria-controls="reviews-drop" aria-expanded="false">*Reviews <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-3">
+                            <a class="a-fill-div" href="wizard.html">*Wizard</a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-4">
+                            <a class="a-fill-div" href="#">Forums</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- News Dropdown -->
+            <div id="news-drop" data-dropdown-content class="f-dropdown content large drop" aria-hidden="true" tabindex="-1">
+                <div class="row collapse">
+                    <div class="small-4 columns text-center dropdown-all">
+                        <a href="#" class="a-fill-div">All News</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-android">
+                        <a href="#" class="a-fill-div"><i class="fa fa-android"></i> Android News</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-ios">
+                        <a href="#" class="a-fill-div"><i class="fa fa-apple"></i> iOS News</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row collapse" data-equalizer>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">iPhone 5c: "Made for new users, not existing ones."</span>
+                            <hr>
+                            <img src="../img/iphone5.jpg" alt="iPhone 5">
+                            <span class="dropdown-item">Apple defends their decision to release a budget-friendly version of their iPhone 5.</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">Sony Xperia Z2 and Z3 Comparison</span>
+                            <hr>
+                            <img src="../img/xperia.jpg" alt="Xperia">
+                            <span class="dropdown-item">Representing the most direct counterpart to Apple's iPhone</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">Amazon enters the smartphone race with the Amazon Fire!</span>
+                            <hr>
+                            <img src="../img/carousel-amazon.jpg" alt="Amazon">
+                            <span class="dropdown-item">The Fire smartphone is one of the most unique on the market, with 5 cameras on the front alone.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- End News Dropdown -->
+            
+            <!-- Reviews Dropdown -->
+            <div id="reviews-drop" data-dropdown-content class="f-dropdown content large drop" aria-hidden="true" tabindex="-1">
+                <div class="row collapse">
+                    <div class="small-4 columns text-center dropdown-all">
+                        <a href="#" class="a-fill-div">All Reviews</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-android">
+                        <a href="#" class="a-fill-div"><i class="fa fa-android"></i> Android Reviews</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-ios">
+                        <a href="#" class="a-fill-div"><i class="fa fa-apple"></i> iOS Reviews</a>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row collapse" data-equalizer>
+                    <a href="nexus6review.html"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Nexus 6 Review*</span>
+                        <hr>
+                        <img src="../img/backlayingdownn6th.jpg" alt="Nexus 6">
+                        <br />
+                        Google & Motorola's Monstrous Lollipop
+                    </div></a>
+                    <a href="iphone6review.html"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">iPhone 6 Review*</span>
+                        <hr>
+                        <img src="../img/iphonefaceupth.jpg" alt="iPhone 6">
+                        <br />
+                        The Latest Succesor to Apple's Golden Child
+                    </div></a>
+                    <a href="#"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Galaxy Note 4 Review</span>
+                        <hr>
+                        <img src="../img/note4th.jpg" alt="Galaxy Note 4">
+                        <br />
+                        Samsung's Original Big Boy is Coming Back With a Vengance
+                    </div></a>
+                </div>
+            </div>
+            <!-- End Reviews Dropdown -->
+            
+            <!-- End Dropdowns -->
+
+            <!-- Trending -->
+            <div class="row collapse">
+
+                <div class="small-12 large-12 small-centered columns text-center" id="nav-trending">
+                    <ul class="newsticker">
+                        <li>
+                            Trending: 
+                                <a href="#">Android 5.0.1 Lollipop bugfixes released!</a>
+                                - If you have a Nexus device, you can get the latest update now!
+                        </li>
+                        <li>
+                            Trending: 
+                                <a href="#">Mozilla may be bringing Firefox to iOS.</a>
+                                - Why is Mozilla changing their mind?
+                        </li>
+                    </ul>                
+                </div>
+            </div>
+            <!-- End Trending -->
+        </div>
+    </div>
+<!--
+    END NAVBAR
+-->
+    
+<!--
+    HOME PAGE BODY
+-->
+    <div class="row">
+        <div class="small-3 columns text-center" id="body-title">
+            <h3>iPhone 6 Review</h3>
+        </div>
+        <div class="small-8 small-offset-1 large-5 large-offset-3 columns end text-center" id="body-subtitle">
+            <h4>The Latest Succesor to Apple's Golden Child</h4>
+        </div>
+    </div>
+    
+    <!--Body Begins-->
+    <div class="row collapse" id="index-body">
+        <div class="row collapse">
+            <div class="small-12 small-offset-1">
+                
+                <br />
+                <br />
+                
+                <em> 
+                    Reviewed by David Canas on December 10th, 2014
+                    <br />
+                    Follow David on <a href="#">twitter</a>
+                </em>
+                
+                <br />
+                <br />
+            </div>
+            
+            <div class="small-10 large-centered small-centered columns">
+                <p>
+                    Anyone who isn't living under a rock knows about the iPhone. It was the first main stream, socially accepted smartphone, and it continues to captivate the hearts of both the young and the old with its sleek look and user-freindly interface that quisque potenti mauris a, luctus consequat id nec, urna nostra, eros imperdiet ultrices urna id vel aliquet, ornare sem cursus lectus et. Vestibulum a dictum duis, fringilla non urna proin ornare adipiscing vestibulum, ultrices massa orci sed neque mattis amet. Metus dignissim dignissim et integer, erat lorem et libero rerum, lectus sed maecenas sapien mauris. Ut libero magna ratione libero imperdiet blandit.
+                </p>
+                
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 small-centered large-uncentered columns">
+                <img src="../img/iphonebackontexture.jpg" alt="iPhone 6">
+            </div>            
+        </div>
+        <div class="row">
+            <div class="small-12 small-centered large-uncentered columns">
+                <br />
+                <h3> Look and Feel</h3>
+                <p>
+                    
+                    Lorem ipsum dolor sit amet, mi nec in, risus ante laoreet elit a, proin sollicitudin id vel, in integer vestibulum wisi rerum cras. Ut felis nascetur pellentesque consequat vestibulum justo, libero accumsan volutpat, a bibendum, commodo lectus consectetuer libero pellentesque, et et ac donec imperdiet interdum. Aliquam maecenas velit, diam amet, a ornare nam in vel, nulla maecenas. Lorem ipsum dolor sit amet, mi nec in, risus ante laoreet elit a, proin sollicitudin id vel, in integer vestibulum wisi rerum cras. Ut felis nascetur pellentesque consequat vestibulum justo, libero accumsan volutpat, a bibendum, commodo lectus consectetuer libero pellentesque, et et ac donec imperdiet interdum. Aliquam maecenas velit, diam amet, a ornare nam in vel, nulla maecenas.Lorem ipsum dolor sit amet, mi nec in, risus ante laoreet elit a, proin sollicitudin id vel, in integer vestibulum wisi rerum cras. Ut felis nascetur pellentesque consequat vestibulum justo, libero accumsan volutpat, a bibendum, commodo lectus consectetuer libero pellentesque, et et ac donec imperdiet interdum. Aliquam maecenas velit, diam amet, a ornare nam in vel, nulla maecenas.
+                    <br />
+                    <br />
+                    <a class="th" href="../img/iphonecamera.jpg">
+                        <img src="../img/iphonecamerath.jpg" alt="iPhone Camera">
+                    </a>
+                
+                    <a class="th" href="../img/iphone%20going%20into%20jeans.jpg">
+                        <img src="../img/iphone%20going%20into%20jeansth.jpg" alt="iPhone Jeans">
+                    </a>
+                
+                    <a class="th" href="../img/iphonefaceup.jpg">
+                        <img src="../img/iphonefaceupth.jpg" alt="iPhone Face Up">
+                    </a>   
+                    
+                    <br />
+                    <br />
+                Quisque potenti mauris a, luctus consequat id nec, urna nostra, eros imperdiet ultrices urna id vel aliquet, ornare sem cursus lectus et. Vestibulum a dictum duis, fringilla non urna proin ornare adipiscing vestibulum, ultrices massa orci sed neque mattis amet. Metus dignissim dignissim et integer, erat lorem et libero rerum, lectus sed maecenas sapien mauris. Ut libero magna ratione libero imperdiet blandit.Quisque potenti mauris a, luctus consequat id nec, urna nostra, eros imperdiet ultrices urna id vel aliquet, ornare sem cursus lectus et. Vestibulum a dictum duis, fringilla non urna proin ornare adipiscing vestibulum, ultrices massa orci sed neque mattis amet. Metus dignissim dignissim et integer, erat lorem et libero rerum, lectus sed maecenas sapien mauris. Ut libero magna ratione libero imperdiet blandit.Quisque potenti mauris a, luctus consequat id nec, urna nostra, eros imperdiet ultrices urna id vel aliquet, ornare sem cursus lectus et. Vestibulum a dictum duis, fringilla non urna proin ornare adipiscing vestibulum, ultrices massa orci sed neque mattis amet. Metus dignissim dignissim et integer, erat lorem et libero rerum, lectus sed maecenas sapien mauris. Ut libero magna ratione libero imperdiet blandit.
+                </p>
+            </div>
+            <div class="row">
+                <div class="small-8 columns">
+                    
+                    <h3> Day to Day Use and Battery Life</h3>
+                    <p>
+
+    Accumsan nullam mi ac, aenean sed quis mollis sollicitudin blandit gravida, pellentesque metus pellentesque pellentesque. Nibh mollis elit mauris nam possimus, vestibulum rutrum luctus erat vestibulum, lobortis sit qui vestibulum in montes, sollicitudin maecenas lobortis eget nec. Et sed inceptos, pellentesque non diam est, amet ac hendrerit purus fermentum in consequat, ac velit nibh. Arcu justo morbi eu luctus tellus eget, pellentesque justo egestas, amet sit wisi, at ipsum, hac porttitor malesuada turpis. Dolore nibh libero. Justo convallis nulla wisi amet arcu.
+    Nonummy luctus diam laoreet enim elit consequat. Vitae pede, libero amet amet molestie tortor felis, ac molestie magna sociis, lectus rhoncus per. Adipiscing commodo augue etiam consectetuer velit proin, nostra orci aut venenatis, est enim sollicitudin, volutpat donec auctor diam a donec. Congue venenatis habitasse mauris mi massa. Consequat nulla eu dui ut, gravida vel, taciti orci volutpat ea nam ante rem. Id mattis senectus interdum at nec et, massa enim, egestas est nunc in sem, donec fringilla pretium, enim purus quisque sodales pretium. 
+                    </p>  
+                </div>
+                
+                <div class="small-4 columns">
+                    <a class="th" href="../img/iphonebatteryuse.jpg">
+                        <img src="../img/iphonebatteryuseth.jpg" alt="Battery Use">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 columns">
+                    <a class="th" href="../img/iphonesampleimage.jpg">
+                            <img src="../img/iphonesampleimageth.jpg" alt="Sample Image iPhone">
+                    </a>           
+                </div>
+                <div class="small-8 columns">
+                    
+                    <h3>Camera Life and Other Remarkable Features</h3>
+                    <p>
+
+    Volutpat laoreet metus euismod ac suspendisse, nec non eu urna eu lorem, ultricies consequat pharetra lacus per, ut dis eget lorem, risus ullamcorper tristique lobortis torquent pellentesque. Lacinia nam non erat urna etiam vel, arcu luctus amet neque elit aenean consequat. Volutpat dapibus risus purus integer, lacus nulla, vitae lectus sed pellentesque pellentesque vehicula metus, nulla sit arcu pharetra ligula, condimentum massa. Quis proin ut elit in sem, rutrum ultricies id nec at integer, nunc in eget ultricies consequat in eu, sem libero in orci viverra nec. In elit autem ac, ante nullam donec. Pretium neque pharetra varius urna, risus venenatis litora fusce lorem, pulvinar nam quis pede, diam bibendum. Aliquam aenean tellus sagittis, sem convallis posuere elementum quis, viverra nunc duis eros vestibulum ultricies, nulla aenean imperdiet volutpat donec tempor elit.
+                    </p>
+                </div>
+            </div>
+            <div class="row collapse">
+                <div class="small-12 small-centered columns">
+                    <h3 class="text-center" id="review-verdict"> Verdict </h3>
+
+                    <!--This is where the pros and cons go, also the rating number on the right-->
+                    <div class="row prosandcons">
+                        <div class="large-10 large-offset-1 columns">
+                            <div class="row collapse" data-equalizer>
+                                <div class="large-3 columns">
+                                    <ul class="pricing-table noIbar" data-equalizer-watch>
+                                        <li class="title">Pros</li>
+                                        
+                                        <!--Begin Pros List-->
+                                        <li class="bullet-item">
+                                            Bigger, beautiful screen.
+                                        </li>
+                                        
+                                        <li class="bullet-item">
+                                            Still shots are improved from last generation.
+                                        </li>
+                                        
+                                         <li class="bullet-item">
+                                            Video is immensly improved over last generation. Slow-mo for days.
+                                        </li>
+                                        
+                                        <li class="bullet-item">
+                                            New body, though a throwback to the first gen, is elegant, thin, and clean.
+                                        </li>
+                                        
+                                        <li class="bullet-item">
+                                            Beatiful revamp to the OS, and made customization much more flexible.
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                                <div class="large-3 columns">
+                                    <ul class="pricing-table noIbar" data-equalizer-watch>
+                                        <li class="title">Cons</li>
+                                        
+                                        <!--Begin Cons List-->
+                                        <li class="bullet-item">
+                                            Loyalist users may find the size a large relative to older models.
+                                        </li>
+                                        
+                                        <li class="bullet-item">
+                                            Battery life is about the same or worse than last gen- would have rather had that over a thinner phone.
+                                        </li>
+                                        
+                                        <li class="bullet-item">
+                                            Feels like a bar of soap, durability may become an issue.
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                                <div class="large-6 columns panel" data-equalizer-watch>
+                                    <h4 class="rating noIbar">90</h4>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        
+                        <div class="large-1 columns">
+                            <i class="moverating fa fa-angle-double-left"></i>
+                        </div>
+                        
+                        <div class="small-10 columns">
+                            <img class="noHover" src="../img/ratingbar.png" alt="gradientvotebar">
+                        </div>
+                        
+                        <div class="large-1 columns">
+                            <i class="moverating fa fa-angle-double-right"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="large-4 columns large-centered">
+                            <p class="text-center">Log in to vote up or down our score!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!--Comment Section-->
+            <div class="row">
+                <div class="large-12 large-centered columns">
+                    <h3> Comments</h3>
+                </div>
+            </div>
+    
+    
+            <!-- Comment-->
+            <div class="row comment">
+                
+                <hr />
+                
+                <div class="large-1 columns large-offset-1">
+                    <strong>196</strong>
+                </div>
+                
+                <div class="large-6 columns">
+                    <p>Wow this author is still really talented!</p>
+                </div>
+                
+                <div class="large-1 large-offset-1 columns">
+                    <i class="fa fa-arrow-up"></i>198 
+                </div>
+                
+                <div class="large-1 columns end">
+                    <i class="fa fa-arrow-down"></i>2
+                </div>
+                
+                <hr />
+                
+            </div>
+    
+            <!-- Comment-->
+            <div class="row comment">
+                
+                <div class="large-1 columns large-offset-1">
+                    <strong>-212</strong>
+                </div>
+                
+                <div class="large-6 columns">
+                    <p>No Verge logo??</p>
+                </div>
+                
+                <div class="large-1 large-offset-1 columns">
+                    <i class="fa fa-arrow-up"></i>2
+                </div>
+                
+                <div class="large-1 columns end">
+                    <i class="fa fa-arrow-down"></i>214
+                </div>
+                
+                <hr />
+                
+            </div>
+    
+            <!-- Comment-->
+            <div class="row comment">
+                
+                <div class="large-1 columns large-offset-1">
+                    <strong>-2</strong>
+                </div>
+                
+                <div class="large-6 columns">
+                    <p>I still think a really good name for this site would have been color phone world.</p>
+                </div>
+                
+                <div class="large-1 large-offset-1 columns">
+                    <i class="fa fa-arrow-up"></i>0 
+                </div>
+                
+                <div class="large-1 columns end">
+                    <i class="fa fa-arrow-down"></i>2
+                </div>
+                
+                <hr />
+            </div>
+            
+            <div class="row comment-input">
+                <div class="small-10 small-offset-1 columns">
+                    <label>Comment
+                        <textarea placeholder="Type a comment..."></textarea>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--
+    END HOME PAGE BODY
+-->
+    
+<!--
+    FOOTER
+-->
+    <div class="row" id="footer">
+        <div class="row collapse">
+            <div class="small-2 columns text-center" id="back-to-top">
+                <a class="a-fill-div" href="index.html">Back to top <i class="fa fa-arrow-up"></i></a>
+            </div>
+            <div class="small-2 small-offset-2 columns footer-title">
+                Sections
+            </div>
+            <div class="small-2 columns footer-title">
+                Social
+            </div>
+            <div class="small-2 columns footer-title">
+                Questions
+            </div>
+            <div class="small-2 columns footer-title">
+                Other
+            </div>
+        </div>
+
+        <div class="row collapse">
+            <div class="small-2 columns text-right">
+                <input type="text" placeholder="Find something...">
+                <span id="footer-logo"><i class="fa fa-heart"></i> thank you for using pdex!<br>
+                    &copy;2014</span>
+            </div>
+            <div class="small-2 small-offset-2 columns footer-links">
+                <a href="#">News</a><br>
+                <a href="#">Reviews</a><br>
+                <a href="#">Wizard</a><br>
+                <a href="#">Forums</a><br>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a><br>
+                <a href="#"><i class="fa fa-twitter"></i> Twitter</a><br>
+                <a href="#"><i class="fa fa-google-plus"></i> Google+</a><br>
+                <a href="#"><i class="fa fa-tumblr"></i> tumblr</a><br>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#">Help</a><br>
+                <a href="#">Tip us</a><br>
+                <a href="#">Contact</a>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#">Login</a><br>
+                <a href="#">Forum Rules</a><br>
+                <a href="#">Terms of Use</a><br>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+<!--
+    END FOOTER
+-->
+
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/jquery.newsTicker.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script src="../js/vendor/fastclick.js"></script>
+    <script>
+        /*
+        $(document).ready(function () {
+
+            $(".home-carousel").owlCarousel({
+                singleItem: true,
+                autoPlay: 4000,
+                autoHeight: true
+            });
+        });*/
+        
+        
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+            $('.scrollup').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+        });
+        
+        $('.newsticker').newsTicker({
+            row_height: 8,
+            max_row: 1,
+            direction: 'down',
+            speed: 50,
+            duration: 4500
+        });
+        
+        $(document).foundation();
+        
+    </script>
+</body>
+
+</html>

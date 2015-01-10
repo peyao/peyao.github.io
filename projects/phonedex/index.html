@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>phonedex - Home</title>
+    <meta name="Author" content="Peter Yao, Jen Nguyen, David Canas" />
+    <!-- meta viewport ensures proper mobile rendering" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <!-- Subpages need to change directories, different from index.html -->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="owl-carousel/owl.theme.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+</head>
+
+<body>
+
+<!--
+    NAVBAR
+-->
+    <div id="nav">
+        <!-- Logo -->
+        <div class="row collapse text-center">
+            <div class="small-2 large-2 large-offset-0 columns" id="logo">
+                <a href="index.html"><img src="img/Phonedex%20Logo.png" alt="Phonedex Logo"></a>
+            </div>
+            <div class="small-2 small-offset-1 large-1 large-offset-5 columns" id="search-nav-tab"><a href="#" class="a-fill-div">search &nbsp;&nbsp;<i class="fa fa-search"></i></a></div>
+            <div class="small-2 large-1 columns" id="login-nav-tab"><a href="#" class="a-fill-div">login &nbsp;&nbsp;<i class="fa fa-user"></i></a></div>
+            <div class="small-2 large-1 columns" id="tip-us-nav-tab"><a href="#" class="a-fill-div">tip us &nbsp;&nbsp;<i class="fa fa-exclamation"></i></a></div>
+            <div class="small-2 large-1 columns end" id="help-nav-tab"><a href="#" class="a-fill-div">need help &nbsp;&nbsp;<i class="fa fa-question"></i></a></div>
+        </div>
+        <!-- End Logo -->
+
+        <div class="row">
+            <!-- Dropdowns -->
+            <div class="row collapse">
+                <div class="small-12 large-12 small-centered columns text-center" id="nav-links">
+                    <div class="row collapse">
+                        <div class="small-3 columns" id="nav-link-1">
+                            <a class="a-fill-div darken" href="#" data-dropdown="news-drop" data-options="align:bottom" aria-controls="news-drop" aria-expanded="false">*News <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-2">
+                            <a class="a-fill-div darken" href="#" data-dropdown="reviews-drop" data-options="align:bottom" aria-controls="reviews-drop" aria-expanded="false">*Reviews <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-3">
+                            <a class="a-fill-div" href="subpages/wizard.html">*Wizard</a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-4">
+                            <a class="a-fill-div" href="#">Forums</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- News Dropdown -->
+            <div id="news-drop" data-dropdown-content class="f-dropdown content large drop" aria-hidden="true" tabindex="-1">
+                <div class="row collapse">
+                    <div class="small-4 columns text-center dropdown-all">
+                        <a href="#" class="a-fill-div">All News</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-android">
+                        <a href="#" class="a-fill-div"><i class="fa fa-android"></i> Android News</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-ios">
+                        <a href="#" class="a-fill-div"><i class="fa fa-apple"></i> iOS News</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row collapse" data-equalizer>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">iPhone 5c: "Made for new users, not existing ones."</span>
+                            <hr>
+                            <img src="img/iphone5.jpg" alt="iPhone 5">
+                            <span class="dropdown-item">Apple defends their decision to release a budget-friendly version of their iPhone 5.</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">Sony Xperia Z2 and Z3 Comparison</span>
+                            <hr>
+                            <img src="img/xperia.jpg" alt="xperia">
+                            <span class="dropdown-item">Representing the most direct counterpart to Apple's iPhone</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">Amazon enters the smartphone race with the Amazon Fire!</span>
+                            <hr>
+                            <img src="img/carousel-amazon.jpg" alt="Amazon Fire">
+                            <span class="dropdown-item">The Fire smartphone is one of the most unique on the market, with 5 cameras on the front alone.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- End News Dropdown -->
+            
+            <!-- Reviews Dropdown -->
+            <div id="reviews-drop" data-dropdown-content class="f-dropdown content large drop" aria-hidden="true" tabindex="-1">
+                <div class="row collapse">
+                    <div class="small-4 columns text-center dropdown-all">
+                        <a href="#" class="a-fill-div">All Reviews</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-android">
+                        <a href="#" class="a-fill-div"><i class="fa fa-android"></i> Android Reviews</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-ios">
+                        <a href="#" class="a-fill-div"><i class="fa fa-apple"></i> iOS Reviews</a>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row collapse" data-equalizer>
+                    <a href="subpages/nexus6review.html"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Nexus 6 Review*</span>
+                        <hr>
+                        <img src="img/backlayingdownn6th.jpg" alt="Review 1">
+                        <br />
+                        Google & Motorola's Monstrous Lollipop
+                    </div></a>
+                    <a href="subpages/iphone6review.html"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">iPhone 6 Review*</span>
+                        <hr>
+                        <img src="img/iphonefaceupth.jpg" alt="Review 2">
+                        <br />
+                        The Latest Succesor to Apple's Golden Child
+                    </div></a>
+                    <a href="#"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Galaxy Note 4 Review</span>
+                        <hr>
+                        <img src="img/note4th.jpg" alt="Review 3">
+                        <br />
+                        Samsung's Original Big Boy is Coming Back With a Vengance
+                    </div></a>
+                </div>
+            </div>
+            <!-- End Reviews Dropdown -->
+            
+            <!-- End Dropdowns -->
+
+            <!-- Trending -->
+            <div class="row collapse">
+                <div class="small-12 large-12 small-centered columns text-center" id="nav-trending">
+                    <ul class="newsticker">
+                        <li>
+                            Trending: 
+                                <a href="#">Android 5.0.1 Lollipop bugfixes released!</a>
+                                - If you have a Nexus device, you can get the latest update now!
+                        </li>
+                        <li>
+                            Trending: 
+                                <a href="#">Mozilla may be bringing Firefox to iOS.</a>
+                                - Why is Mozilla changing their mind?
+                        </li>
+                    </ul>                
+                </div>
+            </div>
+            <!-- End Trending -->
+        </div>
+    </div>
+<!--
+    END NAVBAR
+-->
+    
+<!--
+    HOME PAGE BODY
+-->
+    <div class="row collapse img-border" id="index-body">
+        <div class="row collapse">
+            <div class="small-12 columns">
+                <div class="row collapse text-center">
+                <dl class="tabs" data-tab>
+                    <dt></dt>
+                    <dd class="active small-4 columns"><a href="#panel1">All</a></dd>
+                    <dd class="small-4 columns"><a href="#panel2" id="tab-android"><i class="fa fa-android"></i>&nbsp;&nbsp;Android</a></dd>
+                    <dd class="small-4 columns"><a href="#panel3" id="tab-ios"><i class="fa fa-apple"></i>&nbsp;&nbsp;iOS</a></dd>
+                    
+                </dl>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="tabs-content">
+            
+                <!-- All Tab -->
+                <div class="content active" id="panel1">
+                    <!-- Carousel -->
+                    <div class="row">
+                        <div class="large-12 columns home-carousel">
+                            <div class="owl-item">
+                                    <a href="#">
+                                        <img src="img/carousel-xperia.jpg" class="pony1" alt="Xperia"> 
+                                        <div class="black-box noIbar">
+                                            <span class="index-large-title">
+                                                Sony Xperia Z3 and Z3 Compact Comparison : 
+                                            </span>
+                                            <span class="index-subtitle">
+                                                Representing the most direct counterpart to Apple's iPhone
+                                            </span>
+                                        </div>
+                                        
+                                    </a>
+                            </div>
+
+                            <div class="owl-item">
+                                <a href="#">
+                                    <img src="img/iphone6.jpg" class="pony1" alt="iPhone 6">
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            iPhone 6 Review: 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            Apple enters the phablet market. With a few exceptions, this phone is exceptional. 
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="owl-item">
+                                <a href="#">
+                                    <img src="img/iphone5.jpg" class="pony1" alt="iPhone 5">
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            iPhone 5C : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            Apple defends their decision to release a budget-friendly version of their iPhone 5. Is Apple going to use the same approach for the next iPhone iteration?
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Carousel -->
+         
+                    <!-- Under Carousel -->
+                    <div class="row">
+                        
+                        <div class="small-7 columns">
+                            <a href= "#">
+                                <img src="img/nexus.jpg" alt="Nexus">
+                                <div class="noIbar black-box-nexus6">
+                                    <span class="index-large-title">
+                                    Nexus 6 Review : 
+                                    </span>
+                                    <span class="index-subtitle">
+                                    Taller, Wider, and Thicker than either the iPhone 6 and Samsung Galaxy Note
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="small-5 columns index-two-stack">
+                            <a href= "#">
+                                <img src="img/index_windows_phone.jpg" alt="Windows Phone"></a>
+                                <div class="black-box-tiny noIbar black-box-windows">
+                                    <span class="index-large-title">
+                                    Windows Phones : 
+                                    </span>
+                                    <span class="index-subtitle">
+                                    Still relevant?
+                                    </span>
+                                </div>
+                            
+                            
+                            
+                            <a href= "#">
+                                <img src="img/iphone5s.jpg" alt="Galaxy Note"></a>
+                            <div class="black-box-tiny noIbar black-box-edge">
+                                <span class="index-large-title">
+                                    iPhone 5s : 
+                                </span>
+                                <span class="index-subtitle">
+                                    Guide to buying used iPhones.
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- End All Tab -->
+                
+                <!-- Android Tab -->
+                <div class="content" id="panel2">
+                    <!-- Carousel -->
+                    <div class="row">
+                        <div class="large-12 columns home-carousel">
+                            <div class="owl-item">
+                                <a href="#">
+                                    <img src="img/carousel-xperia.jpg" class="pony1" alt="Xperia"> 
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            Sony Xperia Z3 and Z3 Compact Comparison : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            Representing the most direct counterpart to Apple's iPhone
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="owl-item">
+                                <a href="#">
+                                    <img src="img/carousel-motorola.jpg" class="pony1" alt="Motorola">
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            Motorola Moto X : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            Unprecedented customization for each person
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="owl-item">
+                                <a href="#">
+                                    <img src="img/carousel-amazon.jpg" class="pony1" alt="Amazon">
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            Amazon Fire Phone : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            The first smartphone with Dynamic Perspective
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Carousel -->
+         
+                    <!-- Under Carousel -->
+                    <div class="row">
+                        
+                        <div class="small-7 columns">
+                            <a href= "#">
+                                <img src="img/nexus.jpg" alt="Nexus">
+                                <div class="noIbar black-box-nexus6">
+                                    <span class="index-large-title">
+                                    Nexus 6 Review : 
+                                    </span>
+                                    <span class="index-subtitle">
+                                    Taller, Wider, and Thicker than either the iPhone 6 and Samsung Galaxy Note
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="small-5 columns index-two-stack">
+                            <a href= "#">
+                                <img src="img/index_windows_phone.jpg" alt="Windows Phone">
+                            </a>
+                            <div class="black-box-tiny noIbar black-box-windows">
+                                <span class="index-large-title">
+                                Windows Phones : 
+                                </span>
+                                <span class="index-subtitle">
+                                Still relevant?
+                                </span>
+                            </div>
+                            
+                            
+                            
+                            <a href= "#">
+                                <img src="img/index_galaxynote.jpg" alt="Galaxy Note">
+                            </a>
+                            <div class="black-box-tiny noIbar black-box-edge">
+                                <span class="index-large-title">
+                                    Note Edge : 
+                                </span>
+                                <span class="index-subtitle">
+                                    Better watch that edge!
+                                </span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- END Under Carousel -->
+                </div>
+                <!-- End Android Tab -->
+                
+                <!-- iOS Tab -->
+                <div class="content" id="panel3">
+                    <!-- Carousel -->
+                    <div class="row">
+                        <div class="large-12 columns home-carousel">
+                            <div class="owl-item">
+                                <a href="#">
+                                    <img src="img/iphone6+.jpg" class="pony1" alt="iPhone 6 Plus"> 
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            iPhone 6 Plus : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            A big phone produced by Apple to meet the demands of consumers
+                                        </span>
+                                    </div>
+                                    
+                                </a>
+                            </div>
+
+                            <div class="owl-item">
+                                <a href="#">
+                                    <img src="img/iphone6.jpg" class="pony1" alt="iPhone 6">
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            iPhone 6 Review : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            With a couple of exceptions, this is how bigger phones should work
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="owl-item">
+                                <a href="#">
+                                    <img src="img/iphone5.jpg" class="pony1" alt="iPhone 5">
+                                    <div class="black-box noIbar">
+                                        <span class="index-large-title">
+                                            iPhone 5C : 
+                                        </span>
+                                        <span class="index-subtitle">
+                                            Made for new users, not existing ones
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Carousel -->
+         
+                    <!-- Under Carousel -->
+                    <div class="row">
+                        <div class="small-7 columns">
+                            <a href= "#">
+                                <img src="img/bendgate.jpg" alt="Nexus">
+                                <div class="noIbar black-box-nexus6">
+                                    <span class="index-large-title">
+                                    Bendgate : 
+                                    </span>
+                                    <span class="index-subtitle">
+                                    Is your phone safe in your own pockets? iPhone 6 Plus bent on camera with bare hands.
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="small-5 columns index-two-stack">
+                            <a href= "#">
+                                <img src="img/batterypack.jpg" alt="Windows Phone"></a>
+                                <div class="black-box-tiny noIbar black-box-windows">
+                                    <span class="index-large-title">
+                                    Mobile Juice Air Pack : 
+                                    </span>
+                                    <span class="index-subtitle">
+                                    Extend battery life
+                                    </span>
+                                </div>
+                            <a href= "#">
+                                <img src="img/iphone5s.jpg" alt="Galaxy Note"></a>
+                            <div class="black-box-tiny noIbar black-box-edge">
+                                <span class="index-large-title">
+                                    iphone 5s : 
+                                </span>
+                                <span class="index-subtitle">
+                                    Guide to buying used iPhones.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End iOS Tab -->
+                
+            </div>
+        </div>
+    </div>
+<!--
+    END HOME PAGE BODY
+-->
+    
+<!--
+    FOOTER
+-->
+    <div class="row" id="footer">
+        <div class="row collapse">
+            <div class="small-2 columns text-center" id="back-to-top">
+                <a class="a-fill-div" href="index.html">Back to top <i class="fa fa-arrow-up"></i></a>
+            </div>
+            <div class="small-2 small-offset-2 columns footer-title">
+                Sections
+            </div>
+            <div class="small-2 columns footer-title">
+                Social
+            </div>
+            <div class="small-2 columns footer-title">
+                Questions
+            </div>
+            <div class="small-2 columns footer-title">
+                Other
+            </div>
+        </div>
+
+        <div class="row collapse">
+            <div class="small-2 columns text-right">
+                <input type="text" placeholder="Find something...">
+                <span id="footer-logo"><i class="fa fa-heart"></i> thank you for using pdex!<br>
+                    &copy;2014</span>
+            </div>
+            <div class="small-2 small-offset-2 columns footer-links">
+                <a href="#">News</a><br>
+                <a href="#">Reviews</a><br>
+                <a href="#">Wizard</a><br>
+                <a href="#">Forums</a><br>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a><br>
+                <a href="#"><i class="fa fa-twitter"></i> Twitter</a><br>
+                <a href="#"><i class="fa fa-google-plus"></i> Google+</a><br>
+                <a href="#"><i class="fa fa-tumblr"></i> tumblr</a><br>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#">Help</a><br>
+                <a href="#">Tip us</a><br>
+                <a href="#">Contact</a>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#">Login</a><br>
+                <a href="#">Forum Rules</a><br>
+                <a href="#">Terms of Use</a><br>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+<!--
+    END FOOTER
+-->
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery.newsTicker.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/vendor/fastclick.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script>
+        /*
+        $(document).ready(function () {
+
+            $(".home-carousel").owlCarousel({
+                singleItem: true,
+                autoPlay: 4000,
+                autoHeight: true
+            });
+        });*/
+        
+        $('.newsticker').newsTicker({
+            row_height: 8,
+            max_row: 1,
+            direction: 'down',
+            speed: 50,
+            duration: 4500
+        });
+        
+        $(document).ready(function() {
+ 
+          $(".home-carousel").owlCarousel({
+            singleItem: true,
+            autoPlay: 3500,
+            autoHeight: false
+          });
+        });
+        
+        $(document).foundation();
+        
+    </script>
+</body>
+
+</html>

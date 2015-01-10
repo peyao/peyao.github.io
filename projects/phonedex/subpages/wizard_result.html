@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>phonedex - Wizard Results</title>
+    <meta name="Author" content="Peter Yao, Jen Nguyen, David Canas" />
+    <!-- meta viewport ensures proper mobile rendering" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+    <!-- Subpages need to change directories, different from index.html -->
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-slider-pips/jquery-ui-slider-pips.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+</head>
+
+<body>
+
+<!--
+    NAVBAR
+-->
+    <div id="nav">
+        <!-- Logo -->
+        <div class="row collapse text-center">
+            <div class="small-2 large-2 large-offset-0 columns" id="logo">
+                <a href="../index.html"><img src="../img/Phonedex%20Logo.png" alt="Phonedex Logo"></a>
+            </div>
+            <div class="small-2 small-offset-1 large-1 large-offset-5 columns" id="search-nav-tab"><a href="#" class="a-fill-div">search &nbsp;&nbsp;<i class="fa fa-search"></i></a></div>
+            <div class="small-2 large-1 columns" id="login-nav-tab"><a href="#" class="a-fill-div">login &nbsp;&nbsp;<i class="fa fa-user"></i></a></div>
+            <div class="small-2 large-1 columns" id="tip-us-nav-tab"><a href="#" class="a-fill-div">tip us &nbsp;&nbsp;<i class="fa fa-exclamation"></i></a></div>
+            <div class="small-2 large-1 columns end" id="help-nav-tab"><a href="#" class="a-fill-div">need help &nbsp;&nbsp;<i class="fa fa-question"></i></a></div>
+        </div>
+        <!-- End Logo -->
+
+        <div class="row">
+            <!-- Dropdowns -->
+            <div class="row collapse">
+                <div class="small-12 large-12 small-centered columns text-center" id="nav-links">
+                    <div class="row collapse">
+                        <div class="small-3 columns" id="nav-link-1">
+                            <a class="a-fill-div darken" href="#" data-dropdown="news-drop" data-options="align:bottom" aria-controls="news-drop" aria-expanded="false">*News <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-2">
+                            <a class="a-fill-div darken" href="#" data-dropdown="reviews-drop" data-options="align:bottom" aria-controls="reviews-drop" aria-expanded="false">*Reviews <i class="fa fa-caret-down"></i></a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-3">
+                            <a class="a-fill-div" href="wizard.html">*Wizard</a>
+                        </div>
+                        <div class="small-3 columns" id="nav-link-4">
+                            <a class="a-fill-div" href="#">Forums</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- News Dropdown -->
+            <div id="news-drop" data-dropdown-content class="f-dropdown content large drop" aria-hidden="true" tabindex="-1">
+                <div class="row collapse">
+                    <div class="small-4 columns text-center dropdown-all">
+                        <a href="#" class="a-fill-div">All News</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-android">
+                        <a href="#" class="a-fill-div"><i class="fa fa-android"></i> Android News</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-ios">
+                        <a href="#" class="a-fill-div"><i class="fa fa-apple"></i> iOS News</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row collapse" data-equalizer>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">iPhone 5c: "Made for new users, not existing ones."</span>
+                            <hr>
+                            <img src="../img/iphone5.jpg" alt="iPhone 5">
+                            <span class="dropdown-item">Apple defends their decision to release a budget-friendly version of their iPhone 5.</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">Sony Xperia Z2 and Z3 Comparison</span>
+                            <hr>
+                            <img src="../img/xperia.jpg" alt="Xperia">
+                            <span class="dropdown-item">Representing the most direct counterpart to Apple's iPhone</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="small-4 columns panel" data-equalizer-watch>
+                            <span class="dropdown-title">Amazon enters the smartphone race with the Amazon Fire!</span>
+                            <hr>
+                            <img src="../img/carousel-amazon.jpg" alt="Amazon">
+                            <span class="dropdown-item">The Fire smartphone is one of the most unique on the market, with 5 cameras on the front alone.</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- End News Dropdown -->
+
+            
+            <!-- Reviews Dropdown -->
+            <div id="reviews-drop" data-dropdown-content class="f-dropdown content large drop" aria-hidden="true" tabindex="-1">
+                <div class="row collapse">
+                    <div class="small-4 columns text-center dropdown-all">
+                        <a href="#" class="a-fill-div">All Reviews</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-android">
+                        <a href="#" class="a-fill-div"><i class="fa fa-android"></i> Android Reviews</a>
+                    </div>
+                    <div class="small-4 columns text-center dropdown-ios">
+                        <a href="#" class="a-fill-div"><i class="fa fa-apple"></i> iOS Reviews</a>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row collapse" data-equalizer>
+                    <a href="nexus6review.html"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Nexus 6 Review*</span>
+                        <hr>
+                        <img src="../img/backlayingdownn6th.jpg" alt="Nexus 6">
+                        <br />
+                        Google & Motorola's Monstrous Lollipop
+                    </div></a>
+                    <a href="iphone6review.html"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">iPhone 6 Review*</span>
+                        <hr>
+                        <img src="../img/iphonefaceupth.jpg" alt="iPhone 6">
+                        <br />
+                        The Latest Succesor to Apple's Golden Child
+                    </div></a>
+                    <a href="#"><div class="small-4 columns panel" data-equalizer-watch>
+                        <span class="dropdown-title">Galaxy Note 4 Review</span>
+                        <hr>
+                        <img src="../img/note4th.jpg" alt="Note 4">
+                        <br />
+                        Samsung's Original Big Boy is Coming Back With a Vengance
+                    </div></a>
+                </div>
+            </div>
+            <!-- End Reviews Dropdown -->
+            
+            <!-- End Dropdowns -->
+
+            <!-- Trending -->
+            <div class="row collapse">
+                <div class="small-12 large-12 small-centered columns text-center" id="nav-trending">
+                    <ul class="newsticker">
+                        <li>
+                            Trending: 
+                                <a href="#">Android 5.0.1 Lollipop bugfixes released!</a>
+                                - If you have a Nexus device, you can get the latest update now!
+                        </li>
+                        <li>
+                            Trending: 
+                                <a href="#">Mozilla may be bringing Firefox to iOS.</a>
+                                - Why is Mozilla changing their mind?
+                        </li>
+                    </ul>                
+                </div>
+            </div>
+            <!-- End Trending -->
+        </div>
+    </div>
+<!--
+    END NAVBAR
+-->
+    
+<!--
+    HOME PAGE BODY
+-->
+    <div class="row">
+        <div class="small-3 columns text-center" id="body-title">
+            <h3>Wizard Results</h3>
+        </div>
+        <div class="small-8 small-offset-1 large-5 large-offset-3 columns end text-center" id="body-subtitle">
+            <h4>The phones that match your preferences.</h4>
+        </div>
+    </div>
+    <div class="row collapse" id="index-body">
+        <div class="row wizard-result-row" data-equalizer>
+            <div class="small-4 columns panel" data-equalizer-watch>
+                <span class="wizard-result-phone-title">1. Google Nexus 6</span>
+                <span class="wizard-result-phone-title right"><i class="fa fa-android"></i></span>
+                <hr>
+                <span class="wizard-result-phone-description">
+                    The Nexus 6 is Google's most advanced smartphone to date (and most expensive). The Nexus 6 is a flagship among flagships! Read our full review <a href="Review1.html">here</a>!
+                </span>
+                <img src="../img/wizard_result/nexus%206.png" alt="Nexus 6">
+                <hr>
+                <ul class="pricing-table">
+                    <li class="title">32GB / 64GB</li>
+                    <li class="bullet-item">$249 - $699</li>
+                    <li class="bullet-item">Display - 5.96" AMOLED - 1440x2560</li>
+                    <li class="bullet-item">Snapdragon 805 (2.7GHz QuadCore) - 3GB Ram</li>
+                    <li class="bullet-item">No microSD card slot.</li>
+                    <li class="bullet-item">Camera - 13 MP - 4128x3096</li>
+                    <li class="bullet-item">Battery - 3220mA - 330hr Standby - 24hr Talk</li>
+                </ul>
+            </div>
+            <div class="small-4 columns panel" data-equalizer-watch>
+                <span class="wizard-result-phone-title">2. Samsung Galaxy Note 4</span>
+                <span class="wizard-result-phone-title right"><i class="fa fa-android"></i></span>
+                <hr>
+                <span class="wizard-result-phone-description">
+                    Samsung's Note series have been a strong contendor in the phablet market since its conception. This the fourth entry, and it does not disappoint phablet users.
+                </span>
+                <img src="../img/wizard_result/samsung-galaxy-note-4-1.png" alt="Note 4">
+                <hr>
+                <ul class="pricing-table">
+                    <li class="title">32GB</li>
+                    <li class="bullet-item">$299 - $699</li>
+                    <li class="bullet-item">Display - 5.7" Super AMOLED - 1440x2560</li>
+                    <li class="bullet-item">Snapdragon 805 (2.7GHz QuadCore) - 3GB Ram</li>
+                    <li class="bullet-item">microSD card slot up to 128GB</li>
+                    <li class="bullet-item">Camera - 16 MP - 5312x2988</li>
+                    <li class="bullet-item">Battery - 3220mA - 20hr Talk - 82hr Music</li>
+                </ul>
+            </div>
+            <div class="small-4 columns panel" data-equalizer-watch>
+                <span class="wizard-result-phone-title">3. Motorola Moto X (2nd Gen.)</span>
+                <span class="wizard-result-phone-title right"><i class="fa fa-android"></i></span>
+                <hr>
+                <span class="wizard-result-phone-description">
+                    The 2014 version is the 2nd generation in Motorola's Moto X line. This is a Motorola's flagship-tier phone for a much lower price!
+                </span>
+                <img src="../img/wizard_result/MotoX-512x460.png" alt="Moto X">
+                <hr>
+                <ul class="pricing-table">
+                    <li class="title">16GB / 32GB</li>
+                    <li class="bullet-item">$99 - $526</li>
+                    <li class="bullet-item">Display - 5.2" AMOLED - 1080x1920</li>
+                    <li class="bullet-item">Snapdragon 801 (2.5GHz QuadCore) - 2GB Ram</li>
+                    <li class="bullet-item">No microSD card slot.</li>
+                    <li class="bullet-item">Camera - 13 MP - 4128x3096</li>
+                    <li class="bullet-item">Battery - 2300mA</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--
+    END HOME PAGE BODY
+-->
+    
+<!--
+    FOOTER
+-->
+    <div class="row" id="footer">
+        <div class="row collapse">
+            <div class="small-2 columns text-center" id="back-to-top">
+                <a class="a-fill-div" href="index.html">Back to top <i class="fa fa-arrow-up"></i></a>
+            </div>
+            <div class="small-2 small-offset-2 columns footer-title">
+                Sections
+            </div>
+            <div class="small-2 columns footer-title">
+                Social
+            </div>
+            <div class="small-2 columns footer-title">
+                Questions
+            </div>
+            <div class="small-2 columns footer-title">
+                Other
+            </div>
+        </div>
+
+        <div class="row collapse">
+            <div class="small-2 columns text-right">
+                <input type="text" placeholder="Find something...">
+                <span id="footer-logo"><i class="fa fa-heart"></i> thank you for using pdex!<br>
+                    &copy;2014</span>
+            </div>
+            <div class="small-2 small-offset-2 columns footer-links">
+                <a href="#">News</a><br>
+                <a href="#">Reviews</a><br>
+                <a href="#">Wizard</a><br>
+                <a href="#">Forums</a><br>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a><br>
+                <a href="#"><i class="fa fa-twitter"></i> Twitter</a><br>
+                <a href="#"><i class="fa fa-google-plus"></i> Google+</a><br>
+                <a href="#"><i class="fa fa-tumblr"></i> tumblr</a><br>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#">Help</a><br>
+                <a href="#">Tip us</a><br>
+                <a href="#">Contact</a>
+            </div>
+            <div class="small-2 columns footer-links">
+                <a href="#">Login</a><br>
+                <a href="#">Forum Rules</a><br>
+                <a href="#">Terms of Use</a><br>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+<!--
+    END FOOTER
+-->
+
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/jquery.newsTicker.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script src="../js/vendor/fastclick.js"></script>
+    <script>
+        /*
+        $(document).ready(function () {
+
+            $(".home-carousel").owlCarousel({
+                singleItem: true,
+                autoPlay: 4000,
+                autoHeight: true
+            });
+        });*/
+        
+        
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+            $('.scrollup').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+        });
+        
+        $('.newsticker').newsTicker({
+            row_height: 8,
+            max_row: 1,
+            direction: 'down',
+            speed: 50,
+            duration: 4500
+        });
+        
+        $(document).foundation({
+            
+            equalizer : {
+                equalize_on_stack: true   
+            }
+        });
+        
+    </script>
+</body>
+
+</html>

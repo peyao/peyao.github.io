@@ -1,0 +1,703 @@
+/**
+* Variables
+**/
+// $primary-color: #333;
+$font-Fredoka: 'Fredoka One', cursive;
+$font-Lobster: 'Lobster', cursive;
+$font-Yanone: 'Yanone Kaffeesatz', sans-serif;
+
+// http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
+// Colors: magme (unused)
+$magme-1: #F17D80; // pinkish red
+$magme-2: #737495; // blue-purple
+$magme-3: #68A8AD; // tealish
+$magme-4: #C4D4AF; // dark yellowish
+$magme-5: #6C8672; // dark greenish
+
+// Colors: hartwig
+$hartwig-1: #E8A0B8; // pink
+$hartwig-2: #FFC300; // light orange
+$hartwig-3: #BCCF3D; // light green
+$hartwig-4: #02C9C9; // teal
+$hartwig-5: #333333; // blackish
+
+$hartwig-2-hover: #FFCF33;
+$hartwig-4-hover: #02DEDE;
+
+
+// Custom colors
+$subtle-grey: #999999;
+$light-grey: #CCCCCC;
+$logo-color: #83BF17;
+$logo-hover: #A2E524;
+
+$help-red: #DC2742;
+$help-red-hover: #E25066;
+$tip-us-blue: #3A9AD9;
+$tip-us-blue-hover: #65B0E2;
+
+$android-red: #CD1719;
+$ios-blue: #0B99BC;
+
+//Wizard Specific Custom Colors
+$color-android : #99CC00;
+$color-android-hover : #7AA300;
+$color-apple : #8E8E93;
+$color-apple-hover : #78787D;
+$color-question : #FF4444;
+$color-question-hover : #E00000;
+
+// Other
+$box-shadow: 4px 4px 1px $subtle-grey;
+$border-default: 1px solid $hartwig-5;
+
+body {
+    
+    background-image: url('../img/subtle_patterns/cream_pixels.png');
+    overflow-x: hidden;
+}
+
+/**
+* Nav-bar
+**/
+#nav {
+    
+    margin-bottom: 20px;
+    
+    #logo {
+        
+        height: 100%;
+        background-color: $logo-color;
+        box-shadow: $box-shadow;
+        max-height: 39px;
+        margin-top: 25px;
+        
+        h2 {
+            font-family: $font-Yanone;
+            color: white;
+            margin-top: -10px;
+        }
+        
+        img {
+            position: relative;
+            left: -6px;
+            top: -8px;
+        }
+    }
+    
+    #logo:hover {
+        
+        background-color: $logo-hover;
+    }
+    
+    #search-nav-tab {
+        
+        margin-top: 41px;
+        background-color: $hartwig-2;
+        box-shadow: $box-shadow;
+        margin-left: 7px;
+        
+        i {
+            font-size: 80%;   
+        }
+        
+        a {
+            color: white;
+        }
+    }
+    
+    #search-nav-tab:hover {
+        
+        background-color: $hartwig-2-hover;
+    }
+    
+    #login-nav-tab {
+        
+        @extend #search-nav-tab;
+        background-color: $hartwig-4;
+    }
+    
+    #login-nav-tab:hover {
+        
+        background-color: $hartwig-4-hover;
+    }
+    
+    #tip-us-nav-tab {
+        
+        @extend #search-nav-tab;
+        background-color: $tip-us-blue;
+    }
+    
+    #tip-us-nav-tab:hover {
+        
+        background-color: $tip-us-blue-hover;
+    }
+    
+    #help-nav-tab {
+        
+        @extend #search-nav-tab;
+        background-color: $help-red;
+    }
+    
+    #help-nav-tab:hover {
+        
+        background-color: $help-red-hover;
+    }
+    
+    #nav-links {
+    
+        background-color: $hartwig-5;
+        //border: 1px solid $hartwig-5;
+        box-shadow: $box-shadow;
+        
+        a {
+            font-size: 200%;
+            color: white;
+        }
+        
+        #nav-link-1 {
+            a { 
+                color: $hartwig-2;
+            }
+        }
+        
+        #nav-link-1:hover {
+            background-color: $hartwig-2;
+            a { 
+                color: white;
+            }
+        }
+        
+        #nav-link-2 {
+            a { 
+                color: $hartwig-1;
+            }
+        }
+        
+        #nav-link-2:hover {
+            background-color: $hartwig-1;
+            a { 
+                color: white;
+            }
+        }
+        
+        #nav-link-3 {
+            a { 
+                color: $hartwig-3;
+            }
+        }
+        
+        #nav-link-3:hover {
+            background-color: $hartwig-3;
+            a { 
+                color: white;
+            }
+        }
+        
+        #nav-link-4 {
+            a { 
+                color: $hartwig-4;
+            }
+        }
+        
+        #nav-link-4:hover {
+            background-color: $hartwig-4;
+            a { 
+                color: white;
+            }
+        }
+    }
+    
+    #nav-trending {
+        box-shadow: $box-shadow;
+        border: 1px solid $hartwig-5;
+        background-color: white;
+        min-height: 26px;
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+    
+    .drop {
+        
+        .dropdown-all {
+            
+            background-color: $color-question;
+            a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+        }
+        
+        .dropdown-all:hover { background-color: $color-question-hover; }
+        
+        .dropdown-android {
+            
+            background-color: $color-android;
+            a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+        }
+        
+        .dropdown-android:hover { background-color: $color-android-hover; }
+        
+        .dropdown-ios {
+            
+            background-color: $color-apple;
+            a { color: white; padding: 5px 0px 5px 0px; font-size: 120%; }
+        }
+        
+        .dropdown-ios:hover { background-color: $color-apple-hover; }
+        
+        .news-dropdown-header {
+            
+            font-size: 140%;
+        }
+        
+        .dropdown-title {
+            
+            font-size: 160%;
+        }
+        
+        .dropdown-item {
+            
+            font-size: 120%;
+        }
+        
+        .panel {
+            
+            padding-left: 15px;
+            padding-right: 15px;
+            
+            hr {
+                
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+            
+            img {
+                margin-bottom: 5px;   
+            }
+        }
+        
+        .panel:hover {
+            
+            background-color: #E0E0E0;
+            
+            img {
+                opacity: 0.7;   
+            }
+            
+            hr {
+                border-color: black;   
+            }
+        }
+    }
+    
+    #reviews-drop {
+        
+        max-width: 750px;
+    }
+} // END Nav-bar
+
+/**
+* Home Page Body
+**/
+#body-title {
+        
+    background-color: $hartwig-3;
+    box-shadow: 4px 4px 1px $subtle-grey;
+    z-index: -1; // Puts box-shadow behind the body box
+    
+    h3 {
+        
+        color: white;
+        font-family: $font-Yanone;
+    }
+}
+
+#body-subtitle {
+    
+    background-color: $light-grey;
+    box-shadow: 4px 4px 1px $subtle-grey;
+    z-index: -1; // Puts box-shadow behind the body box
+    margin-top: 5px;
+    
+    h4 {
+        
+        color: white;
+        font-family: $font-Yanone;
+    }
+}
+
+.img-border {
+        
+    img {
+        
+        border: 1px solid $subtle-grey;
+    }
+}
+
+#index-body {
+    
+    min-height: 800px;
+    background-color: white;
+    box-shadow: $box-shadow;
+    border: $border-default;
+    
+    dt {
+        
+        margin-bottom: 0px;   
+    }
+    
+    /**Android body**/
+    .pony1 {
+        
+      height:450px;
+      width:100%;
+    }
+    
+    #image1 {
+        
+      position:relative;
+      width:65%;
+      border:.14px gray solid;
+      padding:5px;
+    }
+
+    #box1 {
+        
+      top:280px;
+    }
+
+    #box2 {
+        
+      height:50px;
+    }
+    
+    img:hover {
+        
+        opacity: 0.9;
+    }
+    
+    .noHover:hover {
+        opacity: 1;   
+    }
+
+    #pony2 {
+        
+        position:absolute;
+        top:100px;
+        left:15px;
+        width:90%;
+        background:rgba(0,0,0,0.7);
+    }
+    
+    #image3 {
+        
+        padding-right:50px;
+    }
+
+    .tiny {
+        
+        font-size: 30px;
+    }
+    
+    .black-box {
+        
+        position: absolute;
+        top: 330px;
+        left: 1px;
+        width: 90%;
+        height: 100px;
+        background: rgba(0,0,0,0.7);
+        padding-left: 10px;
+        
+        color: white;
+        letter-spacing: -1px;
+        cursor: pointer;
+        pointer-events: none;
+    }
+    
+    .black-box-tiny {
+        
+        @extend .black-box;
+        height: 50px;
+    }
+    
+    .black-box-nexus6 {
+        
+        @extend .black-box;
+        top: 251px;
+        left: 15px;
+    }
+    
+    .black-box-windows {
+        
+        left: 15px;
+        top: 115px;
+    }
+    
+    .black-box-edge {
+        
+        left: 15px;
+        top: 300px;
+    }
+    
+    .index-two-stack {
+                
+        img {
+            
+            margin-bottom: 11px;
+        }
+    }
+    
+    .index-large-title {
+        
+        font-size: 200%;
+    }
+    
+    .index-subtitle {
+        font-size: 180%;
+    }
+
+    h2 span {
+                
+        color: white;
+        letter-spacing: -1px;
+        
+        /*fallback color*/
+        padding: 10px;
+    }
+    // End Android Body
+    
+    // more .tabs css are implemented in foundation.css
+    .tabs {
+        
+        i {
+            font-size: 130%;
+        }
+        
+        dd {
+            padding: 0;
+        }
+    }
+    
+    // wizard.html Specific
+    .slider-title {
+        
+        margin-bottom: 0.5em;
+        font-size: 200%;
+        background-color: $hartwig-5;
+        color: white;
+    }
+    
+    .slider-icons {
+        
+        font-size: 175%;
+        
+        #question-icon {
+            
+            color: $color-question;
+        }
+    }
+    
+    #os-slider {
+        
+        background-color: $color-question;    
+    }
+    
+    #camera-slider {
+        background-color: $color-apple;   
+    }
+    
+    .slider-info {
+        
+        font-size: 300%;
+        
+        #dont-care-icon {
+            color: $color-apple;
+        }
+    }
+    
+    .slider-showcase {
+        
+        margin-top: -1em;
+        margin-bottom: 3em;
+        padding: 3em 4em 2em;
+    }
+    
+    .wizard-button {
+        
+        margin-right: 5px;
+        font-family: $font-Yanone;
+    }
+    // END wizard.html Specific
+    // wizard-result.html Specific
+    .wizard-result-row {
+        
+        .panel {
+            margin-bottom: 0px;   
+        }
+        
+        .title {
+            font-family: $font-Yanone; 
+        }
+        
+        img {
+            margin-top: 20px;   
+        }
+        
+        .wizard-result-phone-title {
+            
+            font-size: 150%;
+        }
+    }
+    // END wizard-result.html Specific
+    
+    // Reviews specific
+    .rating{
+        
+        @extend .vertical-align;
+        
+        font-size: 15em;
+        text-align: center;
+    }
+    
+    .moverating{
+        
+        position: relative;
+        top: 70px;
+        font-size: 400%;
+        cursor: pointer;
+    }
+    
+    h4{
+        
+        .rating{
+            text-align: center;
+            font-size: 80px;  
+        }
+    }
+    
+    h3 {
+        
+        font-family: $font-Yanone;   
+    }
+    
+    .pricing-table {
+        
+        .title {
+            
+            font-family: $font-Yanone;
+        }
+    }
+    
+    #review-verdict {
+        
+        font-size: 300%;
+    }
+    
+    p {
+        
+        text-align: justify;
+    }
+    
+    .comment {
+        
+        hr {
+            
+            margin-left: 80px;   
+            margin-right: 90px;
+        }
+    }
+    
+    .comment-input {
+        
+        margin-bottom: 20px;   
+    }
+    
+    // End Reviews specific
+    
+} // END Home Page Body
+
+/**
+* Footer
+**/
+#footer {
+    
+    margin-top: -1px;
+    margin-bottom: 30px;
+    box-shadow: $box-shadow;
+    background-color: $hartwig-5;
+    padding: 5px 0px 5px 5px;
+    
+    #back-to-top {
+        
+        background-color: $logo-color;
+        
+        a {
+            color: white;
+            padding: 5px 0px 5px 0px;
+        }
+    }
+    
+    #back-to-top:hover {
+        background-color: $logo-hover;
+    }
+    
+    .footer-title {
+        color: white;
+        font-size: 140%;
+        font-style: italic;
+        @extend .noIbar;
+    }
+    
+    #footer-logo {
+        font-family: $font-Yanone;
+        color: white;
+        @extend .noIbar;
+    }
+    
+    .footer-links {
+        font-family: $font-Yanone;
+        
+        a {
+            color: grey;
+        }
+        
+        a:hover {
+            color: white;   
+        }
+    }
+    
+} // END Footer
+
+
+// When mouse hovers over the text, the cursor doesn't change.
+.vertical-align {
+    
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.noIbar {
+    cursor:default;
+}
+
+.cursor-pointer {
+    cursor: pointer;   
+}
+
+// Make a link fill the whole div
+.a-fill-div {
+    width: 100%;
+    display: block;
+}
+
+li, p, dd {
+    color: $hartwig-5;
+}
+
+* {
+    font-family: $font-Yanone;   
+}
