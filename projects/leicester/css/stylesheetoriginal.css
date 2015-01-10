@@ -1,0 +1,465 @@
+body {
+    background-image: url('../img/subtle_patterns/p5.png');
+}
+
+.row {
+    max-width: 1200px;
+}
+
+.page-exists {
+    color: red;
+}
+
+/*
+-----------
+Top nav bar
+-----------
+*/
+.top-bar {
+    padding-top: 3px;
+    height: 50px;
+    width: 100%;
+}
+
+#top-section {
+    box-shadow: 3px 3px 3px #888888;
+    margin-bottom: 15px;
+}
+
+#top-section a {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#top-section h3 {
+    padding-top: 8px;
+}
+
+.five {
+    max-width: 20%;
+}
+
+/* Shades on hover are chosen from colllor.com using 2 shades lighter */
+#nav-link-academics {
+    height: 50px;
+    background-color: #83AA30;
+}
+
+    #nav-link-academics:hover {
+        background-color: #9EC940;
+    }
+
+#nav-link-admissions {
+    height: 50px;
+    background-color: #1499D3;
+}
+
+    #nav-link-admissions:hover {
+        background-color: #1FADEA;
+    }
+
+#nav-link-campuslife {
+    height: 50px;
+    background-color: #4D6684;
+}
+    
+    #nav-link-campuslife:hover {
+        background-color: #5B779A;
+    }
+
+#nav-link-staff {
+    height: 50px;
+    background-color: #3D3D3D;
+}
+
+    #nav-link-staff:hover {
+        background-color: #525252;
+    }
+
+#nav-link-research {
+    height: 50px;
+    background-color: #E74700;
+}
+
+    #nav-link-research:hover {
+        height: 50px;
+        background-color: #FF540A;
+    }
+
+#campuslife-drop {
+    max-width: 720px;
+}
+
+/*
+-------------------------
+Body (second level pages)
+-------------------------
+*/
+#body-content {
+    background-color: #424242;
+    box-shadow: 3px 3px 3px #888888;
+    min-height: 700px;
+    
+    padding-top: 20px;
+    margin-bottom: 15px;
+    
+    padding-right: 19px;
+}
+
+    #body-content:hover {
+        background-color: #333333;   
+    }
+
+.body-panel {
+    background-color: #FFFFFF;
+    min-height: 548px;
+    padding-top: 15px;
+}
+
+    .body-panel:hover {
+        background-color: #F5F5F5;   
+    }
+
+.body-panel p {
+    color: #333333;
+    text-align: justify;
+}
+
+.body-panel img {
+    border: 1px solid #525252;
+    padding: 2px 2px 2px 2px;
+}
+
+    .body-panel img:hover {
+        opacity: 0.7;
+    }
+
+.breadcrumbs {
+    border-radius: 0px;
+    margin-right: -15px;
+}
+
+.breadcrumbs a {
+    color: #333333;
+}
+
+    .breadcrumbs:hover {
+        background-color: #E0E0E0;
+    }
+
+.side-nav {
+    background-color: #FFFFFF;
+}
+    
+    .side-nav:hover {
+        background-color: #EBEBEB;
+    }
+
+.side-nav li a {
+    font-size: 85%;
+    color: #333333 !important;
+}
+
+    .side-nav li a:hover {
+        text-decoration: underline;
+    }
+
+/*
+------------------
+Home Page Carousel
+------------------
+*/
+#div-carousel {
+    background-color: #424242;
+    box-shadow: 3px 3px 3px #888888;
+    min-height: 100px;
+    
+    padding-top: 20px;
+    margin-bottom: 15px;
+    
+    /* Centers the carousel pictures */
+    text-align: center;
+}
+
+#div-carousel:hover {
+    background-color: #333333;   
+}
+
+#div-carousel a {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+#div-carousel h3 {
+    padding-top: 8px;
+}
+
+#body-link-about {
+    height: 50px;
+    background-color: #FE9601;
+}
+
+    #body-link-about:hover {
+        background-color: #FEAA34;
+    }
+
+#body-link-alumni {
+    height: 50px;
+    background-color: #CC0063;
+}
+
+    #body-link-alumni:hover {
+        background-color: #F50076;
+    }
+
+#body-link-business {
+    height: 50px;
+    background-color: #86269B;
+}
+
+    #body-link-business:hover {
+        background-color: #AA30C5;
+    }
+
+#body-link-allnews {
+    height: 50px;
+    background-color: #00D2F1;
+}
+
+    #body-link-allnews:hover {
+        background-color: #1FE1FF;
+    }
+
+#body-link-jobs {
+    height: 50px;
+    background-color: #00B796;
+}
+
+    #body-link-jobs:hover {
+        height: 50px;
+        background-color: #00CCA7;
+    }
+
+/*
+---------------
+News and Events
+---------------
+*/
+
+#news-events {
+    overflow-x: hidden;
+    box-shadow: 3px 0px 3px #888888;
+}
+
+#news {
+    background-color: #424242;
+    box-shadow: 3px 3px 3px #888888;
+    min-height: 400px;
+    
+    margin-bottom: 0px;
+}
+
+    #news:hover {
+        background-color: #333333;
+
+    }
+
+#news img:hover {
+    opacity:0.7;
+    filter: alpha(opacity=40);
+    
+}
+
+#news p:hover {
+    color:#9EC940;
+}
+
+
+#news p {
+    color:white;
+    padding-top: 10px;
+}
+
+#events {
+    background-color: #424242;
+    box-shadow: 3px 3px 3px #888888;
+    min-height: 400px;
+    
+    margin-right: -5px;
+    margin-bottom: 3px;
+
+
+}
+
+#events p {
+    font-size:10px;
+    color:white;
+}
+
+    #events:hover {
+        background-color: #333333;
+    }
+
+    #events img:hover {
+        opacity:0.7;
+    filter: alpha(opacity=40);
+    }
+
+#events1 {
+    padding-top:8px;
+    padding-bottom:45px;
+}
+
+#events-span {
+    font-size:10px;
+    margin-top: 27px;
+}
+
+/*
+------
+Footer
+------
+*/
+#footer {
+    background-color: #424242;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 0px;
+    box-shadow: 3px 3px 3px #888888;
+    max-height: 82px;
+}
+
+    #footer:hover {
+        background-color: #333333;
+    }
+
+#footer * {
+    color: white;
+    text-align: center;
+}
+
+#footer h3 {
+    margin: 0px auto 0px auto;
+}
+
+#footer a {
+    font-size: 95%;
+}
+
+#footer a:hover {
+    color: #1F1F1F;
+    font-weight: bolder;
+}
+
+#footer i {
+    font-size: 140%;   
+}
+
+#footer i:hover {
+    color: #1F1F1F;
+    font-weight: bolder;
+}
+
+#footer-site-visitors {
+    background-color: #0CACD4;
+}
+
+    #footer-site-visitors:hover {
+        background-color: #18C6F2;
+    }
+
+#footer-useful-links {
+    background-color: #6D3660;
+}
+
+    #footer-useful-links:hover {
+        background-color: #894378;
+    }
+
+#footer-connect {
+    background-color: #CA1619;
+}
+
+    #footer-connect:hover {
+        background-color: #E72326;
+    }
+
+#footer-connect, #footer-useful-links, #footer-site-visitors {
+    min-height: 35px;
+    max-height: 53px;
+    overflow-y: hidden;
+}
+
+.footer-row {
+    padding-top: 6px;   
+}
+
+/*
+.snicon{
+    width:26%;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}*/
+
+/*
+---------
+Dropdowns
+---------
+*/
+.drop-title {
+    margin-top: 4px;   
+}
+
+
+/*
+-----
+Fonts
+-----
+*/
+f-dropdown *{
+    color: red;   
+}
+
+.noIbar {
+    cursor: default;   
+}
+
+a {
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+.black-a {
+    font-family: 'Merriweather', serif;
+    color: black;
+    text-align: left !important;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-size: 130%;
+    color: white;
+}
+
+hr {
+    margin-top: -10px;   
+}
+
+p {
+    font-family: 'Merriweather', serif;
+    color: black;
+}

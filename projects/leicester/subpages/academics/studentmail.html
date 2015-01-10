@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>U of L Student Mail Login</title>
+    <meta name="Author" content="Peter Yao, Jen Nguyen, David Canas" />
+    <!-- meta viewport ensures proper mobile rendering" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Subpages need to change directories, different from index.html -->
+    <link rel="stylesheet" href="../../css/foundation.min.css">
+    <script src="../../js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../../owl-carousel/owl.carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="../../owl-carousel/owl.theme.css"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/stylesheet.css">
+    <!-- Font -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div class="row collapse" id="top-section">
+        <!-- Top Bar -->
+        <div>
+            <nav class="top-bar" data-topbar role="navigation">
+                <ul class="title-area" >
+                    <li class="name" >
+                        <a href="../../index.html">
+                            <img src="../../img/univ_leicester.png" alt="University logo">
+                        </a>
+                    </li>
+                    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a>
+                    </li>
+                </ul>
+                <section class="top-bar-section">
+                    
+                    <ul class="right">
+                        <li class="has-form">
+                            <a href="#" class="button"><i class="fa fa-map-marker"></i> Maps</a>
+                        </li>
+                        <li class="has-form">
+                            <a href="#" class="button secondary"><i class="fa fa-sort-alpha-asc"></i> Directory</a>
+                        </li>
+                        <li class="has-form">
+                            <div class="row collapse">
+                                <div class="large-8 small-9 columns">
+                                    <input type="text" placeholder=" Lost?">
+                                </div>
+                                <div class="large-4 small-3 columns">
+                                    <a href="#" class="alert button expand"><i class="fa fa-search"></i></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+        </div> 
+    
+        <!-- Main Navigation (Dropdowns) -->
+        <div class="five columns" id="nav-link-academics">
+            <a href="#" data-dropdown="academics-drop" data-options="align:bottom" aria-controls="academics-drop" aria-expanded="false" class="darken">
+                <h3>Academics <i class="fa fa-caret-down"></i></h3>
+            </a>
+        </div>
+        <div class="five columns" id="nav-link-admissions">
+            <a href="#" data-dropdown="admissions-drop" data-options="align:bottom" aria-controls="admissions-drop" aria-expanded="false">
+                <h3>Admissions <i class="fa fa-caret-down"></i></h3>
+            </a>
+        </div>
+        <div class="five columns" id="nav-link-campuslife">
+            <a href="#" data-dropdown="campuslife-drop" data-options="align:bottom" aria-controls="campuslife-drop" aria-expanded="false">
+                <h3>Campus Life <i class="fa fa-caret-down"></i></h3>
+            </a>
+        </div>
+        <div class="five columns" id="nav-link-staff">
+            <a href="#" data-dropdown="staff-drop" data-options="align:bottom" aria-controls="staff-drop" aria-expanded="false">
+                <h3>Staff <i class="fa fa-caret-down"></i></h3>
+            </a>
+        </div>
+        <div class="five columns" id="nav-link-research">
+            <a href="#" data-dropdown="research-drop" data-options="align:bottom" aria-controls="research-drop" aria-expanded="false">
+                <h3>Research <i class="fa fa-caret-down"></i></h3>
+            </a>
+        </div>
+
+        <!-- Dropdown Contents -->
+        <!-- Dropdown: Academics -->
+        <div id="academics-drop" data-dropdown-content class="f-dropdown content large" aria-hidden="true" tabindex="-1">
+
+            <div class="row collapse">
+                <div class="small-9 large-9 columns">
+                    <p class="drop-title">What type of student are you? Are you looking for courses?</p>
+                </div>
+                <div class="small-3 large-3 columns">
+                    <a class="button tiny right alert">Blackboard</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <ul class="inline-list drop-center">
+                        <li>
+                            <a href="current_students.html">
+                                <!-- Use class page-exists to mark 2nd level pages
+                                that we have implemented! -->
+                                <span class="page-exists">> *Current Students</span>
+                            </a>
+                        </li>
+                        <li><a href="#">> Prospective Students</a>
+                        </li>
+                        <li><a href="#">> Graduate Students</a>
+                        </li>
+                        <li><a href="#">> International Students</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="small-4 large-4 columns">
+                    <a href="studentmail.html" class="black-a"><span class="page-exists">> *Student Mail</span></a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Undergrad Courses</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Graduate Courses</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Distance Learning and CPD</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Part Time Courses</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Parents and Guardians</a>
+                </div>
+            </div>
+            <div class="row collapse">
+                <br>
+                <div class="small-11 large-11 columns">
+                    <input type="text" placeholder="Search for courses" />
+                </div>
+                <div class="small-1 large-1 columns">
+                    <a href="#" class="button tiny postfix">Go</a>
+                </div>
+            </div>
+            <div class="row collapse">
+                <div class="large-12 columns">
+                </div>
+            </div>
+        </div>
+        <!-- End Dropdown: Academics -->
+
+        <!-- Dropdown: Admissions -->
+        <div id="admissions-drop" data-dropdown-content class="f-dropdown content large" aria-hidden="true" tabindex="-1">
+            
+            <div class="row collapse">
+                <div class="small-12 columns">
+                    <p class="drop-title">Looking to Study Here? </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="small-12 columns">
+                    <ul class="inline-list drop-center">
+                        <li>
+                            <a href="#">> Undergraduate</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">> Postgraduate</a>
+                        </li>
+                            
+                        <li>
+                            <a href="#">> Study Abroad & Exchange</a>
+                        </li>
+                            
+                        <li>
+                            <a href="#">> Why Study With Us?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr />
+            
+            <div class="row">
+                <div class="small-5 columns">
+                    <a href="#" class="black-a">> Undergraduate(UCAS)</a>
+                </div>
+                
+                <div class="small-7 columns">
+                    <a href="#" class="black-a">> Undergraduate(Non-UCAS)</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="small-5 columns">
+                    <a href="#" class="black-a">> Postgraduate Taught(Masters)</a>
+                </div>
+                
+                <div class="small-7 columns">
+                    <a href="#" class="black-a">> Postgraduate Research(PhD and Professional Doctorates)</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="small-5 columns">
+                    <a href="#" class="black-a">> Study Abroad</a>
+                </div>
+                
+                <div class="small-7 columns">
+                    <a href="#" class="black-a">> Erasmus</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="small-5 columns">
+                    <a href="#" class="black-a">> Tuition & Fees</a>
+                </div>
+                
+                <div class="small-7 columns">
+                    <a href="#" class="black-a">> Scholarships</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Dropdown: Admissions -->
+
+        <!-- Dropdown: Campus Life -->
+        <div id="campuslife-drop" data-dropdown-content class="f-dropdown content" aria-hidden="true" tabindex="-1">
+             <div class="row collapse">
+                <div class="small-12 columns">
+                    <p class="drop-title">Want see our resources? Looking to live on campus? Want to get involved?</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="small-12 columns">
+                    <ul class="inline-list drop-center">
+                        <li>
+                            <a href="#">> Our Facilites</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">> Our Accomodation</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">> Athletics</a>
+                        </li>
+                            
+                        <li>
+                            <a href="#">> City Of Leicester</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <hr />
+            
+            <div class="row">
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Accomodation Fees</a>
+                </div>
+                
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Accomodation Rules</a>
+                </div>
+                
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> City Attractions</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Student Union Resources</a>
+                </div>
+                
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Intramural Teams</a>
+                </div>
+                
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Transit Options</a>
+                </div>
+            </div>
+        </div>
+            
+        <!-- End Dropdown: Campus Life -->
+
+        <!-- Dropdown: Staff -->
+        <div id="staff-drop" data-dropdown-content class="f-dropdown content large" aria-hidden="true" tabindex="-1">
+            <div class="row collapse">
+                <div class="small-9 large-9 columns">
+                    <p class="drop-title">Already work at Leicester? Looking for employment?</p>
+                </div>
+                <div class="small-3 large-3 columns">
+                    <a class="button tiny right alert">Staff Login</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <ul class="inline-list drop-center">
+                        <li>
+                            <a href="#">> Current Staff</a>
+                        </li>
+                        <li><a href="#">> Prospective Staff</a>
+                        </li>
+                        <li><a href="#">> Undergrad Employment</a>
+                        </li>
+                        <li><a href="#">> Graduate Employment</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Employment at Leicester</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Enterprise and Business</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Training</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Safety and Health</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Financial Matters</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Travel and Parking</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Environment</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Teaching Support</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Research Support</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Library</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> IT Support</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Campus Facilities</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Trade Unions</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Blackboard</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Website Support</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Important Dates</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Employee Self-Service</a>
+                </div>
+                <div class="small-4 large-4 columns">
+                    <a href="#" class="black-a">> Telephone Directory</a>
+                </div>
+            </div>
+            <div class="row collapse">
+                <br>
+                <div class="small-11 large-11 columns">
+                    <input type="text" placeholder="Search for jobs!" />
+                </div>
+                <div class="small-1 large-1 columns">
+                    <a href="#" class="button tiny postfix">Go</a>
+                </div>
+            </div>
+            <div class="row collapse">
+                <div class="large-12 columns">
+                </div>
+            </div>
+        </div>
+        <!-- End Dropdown: Staff -->
+
+        <!-- Dropdown: Research -->
+        <div id="research-drop" data-dropdown-content class="f-dropdown content large" aria-hidden="true" tabindex="-1">
+            <div class="row collapse">
+                <div class="small-12 columns">
+                    <p class="drop-title">Looking for our academic achievements? Want to research with us?</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="small-12 columns">
+                    <ul class="inline-list drop-center">
+                        <li>
+                            <a href="#">> Our Achievements</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">> Current Research</a>
+                        </li>
+                        
+                        <li>
+                            <a href="#">> Our Research Facilities</a>
+                        </li>
+                            
+                        <li>
+                            <a href="#">> Events & News</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <hr />
+            
+            <div class="row">
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Participate in Research</a>
+                </div>
+                
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Research by Department</a>
+                </div>
+                
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Join Us As An Academic</a>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Research Support Office</a>
+                </div>
+                
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Funding Opportunies</a>
+                </div>
+                
+                <div class="small-4 columns">
+                    <a href="#" class="black-a">> Festival of Research</a>
+                </div>
+            </div>
+        </div>
+        <!-- End Dropdown: Research -->
+        <!-- End All Dropdown Contents -->
+    </div><!-- End top bar -->
+    
+    <!-- Body Contents -->
+    <div class="row collapse" id="body-content">
+        <!-- Main Title *THE HUGE ONE!* -->
+        <div class="row">
+            <div class="small-12 large-12 columns">
+                <h2 class="noIbar">Student Mail</h2>
+            </div>
+        </div>
+        <!-- End Main Title -->
+        <!-- Breadcrumbs Bar -->
+        <div class="row">
+            <div class="small-12 large-12 columns">
+                <ul class="breadcrumbs">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="current_students.html">Current Students</a></li>
+                    <li><a href="studentmail.html">Student Mail Log in</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Breadcrumbs Bar -->
+        <div class="row">
+            <!-- Sidebar Navigation -->
+            <div class="small-2 large-2 columns">
+                <ul class="side-nav">
+                    <li><a href="#">&#187; University Email Help</a></li>
+                    <li><a href="#">&#187; IT Services Desk</a></li>
+                    <li><a href="#">&#187; Password Reset</a></li>
+                    <li><a href="#">&#187; Maintenance Periods</a></li>
+                    <li><a href="#">&#187; Current System Status</a></li>
+                    <li><a href="#">&#187; Staff Email Login</a></li>
+                </ul>    
+            </div>
+            <!-- End Sidebar Navigation -->
+            <!-- Actual Body Contents (text, pictures) -->
+            <div class="small-10 large-10 columns body-panel">
+                <h2 class="importantsocenter"> Student Mail Login</h2>    
+                
+                <input type="text" placeholder="Username" />     
+                <input type="text" placeholder="Password" />
+                <a href="#" class="button">Sign In</a>
+                <br />
+                
+                <a href="#">Forgot Your Password?</a>
+            </div>
+        </div>
+            <!-- End Actual Body Contents (text, pictures) -->
+    </div>
+    <!-- End Body Contents -->
+    
+    <!-- Footer -->
+    <div class="row" id="footer">
+        <div class="row">
+            <div class="small-4 large-4 columns">
+                <h3 class="noIbar">Site Visitors</h3>
+            </div>
+            <div class="small-4 large-4 columns">
+                <h3 class="noIbar">Useful Links</h3>
+            </div>
+            <div class="small-4 large-4 columns">
+                <h3 class="noIbar">Connect</h3>
+            </div>
+        </div>
+        
+        <div class="small-4 large-4 columns" id="footer-site-visitors">
+            <div class="row footer-row">
+                <div class="large-6 columns">
+                    <a href="#">Students</a>
+                </div>
+
+                <div class="large-6 columns">
+                    <a href="#">Staff</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-4 large-4 columns" id="footer-useful-links">
+            <div class="row footer-row">
+                <div class="large-6 columns">
+                    <a href="#">Blackboard</a>
+                </div>
+                <div class="large-6 columns">
+                    <a href="#">U of L Portal</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-4 large-4 columns" id="footer-connect">
+            <div class="row footer-row">
+                <div class="large-4 columns">
+                    <a href="#">Contact</a>
+                </div>
+                <div class="large-4 columns">
+                    <a href="#">Directory</a>
+                </div>
+                <div class="large-4 columns">
+                    <a href="#">
+                        <i class="fa fa-facebook-square">&nbsp;</i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter-square">&nbsp;</i>
+                    </a>   
+                    <a href="#">
+                        <i class="fa fa-youtube-play"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+    
+    
+
+    <script src="../../js/vendor/jquery.js"></script>
+    <script src="../../js/foundation.min.js"></script>
+    <script src="../../js/vendor/fastclick.js"></script>
+    <script src="../../owl-carousel/owl.carousel.js"></script>    <script>
+        $(document).ready(function() {
+ 
+          $(".home-carousel").owlCarousel({
+            singleItem: true,
+            autoPlay: 3000,
+            autoHeight: true
+          });
+        });
+        $(document).foundation();
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+            $('.scrollup').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

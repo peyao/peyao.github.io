@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 
@@ -42,39 +43,43 @@
             </div>
         </div>
         
-        <div class="row body_content">
-            <div class="col-sm-5">
-                <div class="input-group input-group-sm input_group_mod">
-                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                  <input type="text" class="form-control" placeholder="name">
+        <!-- form begins -->
+        <form action="https://salty-falls-6530.herokuapp.com/" method="post" data-success="Message successfully sent!">
+            <div class="row body_content">
+                <div class="col-sm-4">
+                    <div class="input-group input-group-sm input_group_mod">
+                      <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                      <input id="name" type="text" class="form-control" placeholder="name">
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="row body_content">
-            <div class="col-sm-5">
-                <div class="input-group input-group-sm input_group_mod">
-                  <span class="input-group-addon"><i class="fa fa-envelope-square"></i></span>
-                  <input type="text" class="form-control" placeholder="email">
+
+            <div class="row body_content">
+                <div class="col-sm-4">
+                    <div class="input-group input-group-sm input_group_mod">
+                      <span class="input-group-addon"><i class="fa fa-envelope-square"></i></span>
+                      <input id="email" type="text" class="form-control" placeholder="email">
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="row body_content">
-            <div class="col-sm-12">
-                <div class="input-group input-group-sm input_group_mod">
-                  <span class="input-group-addon"><i class="fa fa-file-word-o"></i>
-</span>
-                    <textarea class="form-control" placeholder="message"></textarea>
+
+            <div class="row body_content">
+                <div class="col-sm-12">
+                    <div class="input-group input-group-sm input_group_mod">
+                      <span class="input-group-addon"><i class="fa fa-file-word-o"></i>
+    </span>
+                        <textarea id="message" class="form-control" placeholder="message"></textarea>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="row body_content" id="submit_button">
-            <div class="col-md-12">
-                <button type="button" class="btn btn-info pull-right">submit</button>
+
+            <div class="row body_content" id="submit_button">
+                <div class="col-md-5 col-md-offset-7">
+                    <button type="button" class="btn btn-info pull-right disabled">no back end</button>
+                </div>
             </div>
-        </div>
+        </form>
+        <!-- form ends -->
         
         
         

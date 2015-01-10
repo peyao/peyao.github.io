@@ -58,7 +58,13 @@
 }
 
 #submit_button {
-    margin-left: 0px;   
+    margin-left: 0px;
+    padding: 0px;
+}
+
+#submit_button button {
+    margin-top: 8px;
+    margin-right: 2px;   
 }
 
 #navlink1 {
@@ -92,6 +98,16 @@
 .container_mod {
     max-width: 900px;   
     padding-bottom: 50px;
+}
+
+.project-subtitle {
+    color: gray;
+    float: right;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
 }
 
 hr {
